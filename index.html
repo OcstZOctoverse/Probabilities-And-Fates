@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Picker Wheel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="wheel-area">
+  <input id="wheel-title" type="text" value="Picker Wheel" maxlength="60" spellcheck="false" />
+  <div id="wheel-wrapper">
+    <div id="pointer"></div>
+    <canvas id="wheel-canvas" width="460" height="460"></canvas>
+    <button id="spin-btn">SPIN</button>
+  </div>
+  <div id="result-display"></div>
+  <span id="empty-hint">Add options on the right to get started</span>
+</div>
+
+<div id="panel">
+  <div id="panel-header">Options</div>
+  <div id="options-list"><p class="no-options">No options yet</p></div>
+  <div id="input-bar">
+    <input id="new-option-input" type="text" placeholder="Type an option…" maxlength="60" />
+    <button id="add-btn">Add</button>
+  </div>
+</div>
+
+<script src="wheel.js"></script>
+</body>
+</html>
